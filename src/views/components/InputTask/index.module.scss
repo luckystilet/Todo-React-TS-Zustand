@@ -1,0 +1,59 @@
+.input-task {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px;
+  margin-bottom: 15px;
+  background: #dbe2ef;
+  border-radius: 5px;
+  gap: 10px;
+  &__label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 12px 15px;
+  }
+  &__checkbox {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__title {
+    padding: 5px;
+    line-height: 1.2;
+    &.through {
+      text-decoration: line-through;
+    }
+  }
+  &__remove, &__edit, &__confirm {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    background: none no-repeat center center;
+    transition: opacity .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__remove {
+    background-image: url('../../../icons/trash.svg');
+  }
+  &__edit {
+    background-image: url('../../../icons/edit.svg');
+  }
+  &__confirm {
+    background-image: url('../../../icons/check.svg');
+  }
+  &__title_edit {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 4px 0 -3px #3f72af;
+    line-height: 1;
+    &:focus {
+      box-shadow: 0 0 1px 1px #3f72af;
+    }
+  }
+}

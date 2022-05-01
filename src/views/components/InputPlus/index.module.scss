@@ -1,0 +1,29 @@
+.input-plus {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  width: 100%;
+  &__value {
+    border: solid 1px #b1b1b1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 9px 10px;
+    background: #bde2ef;
+    outline: none;
+    font-size: 18px;
+    &::placeholder {
+      color: #7b7b7b;
+      user-select: none;
+    }
+  }
+  &__button {
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #3f72af url(../../../icons/plus.svg) no-repeat center center;
+    transition: opacity .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
